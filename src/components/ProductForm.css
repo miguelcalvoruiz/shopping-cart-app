@@ -1,0 +1,26 @@
+.product-form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #FFF;
+}
+
+.product-input .product-textarea {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.add-button {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #D82E63;
+    color: #FFF;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
