@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #D82E63;
+    color: #FFF;
+    align-items: baseline;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.total {
+    font-size: 1.5rem;
+}
