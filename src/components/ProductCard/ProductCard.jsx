@@ -1,6 +1,6 @@
 import './ProductCard.css'
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product, removeProduct}) => {
     return (
         <div className="card">
             <img className="image" src={product.image} alt={product.name} />
@@ -9,7 +9,7 @@ const ProductCard = ({product}) => {
                 <p>{product.description}</p>
                 <span>{product.price}€</span>
             </div>
-            <button className="remove-button">❌</button>
+            <button onClick={() => removeProduct(product)} className="remove-button">❌</button>
         </div>
     )
 }
