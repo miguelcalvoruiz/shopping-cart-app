@@ -4,6 +4,14 @@ import ProductForm from './components/ProductForm';
 import ProductList from './components/ProductList';
 import { useState } from 'react';
 
+const calculateTotal = (products) => {
+  let total = 0;
+  for (let i = 0; i < products.length; i++) {
+    total += products[i].price;
+  }
+  return total;
+};
+
 const App = () => {
 
   const [products, setProducts] = useState([]);
@@ -12,9 +20,11 @@ const App = () => {
     setProducts([...products, product]);
   };
 
+  let total = calculateTotal(products);
+
   return (
     <div className='container'>
-      <Header total={2.45} />
+      <Header total={total} />
       <ProductForm addProduct={addProduct} />
       <ProductList products={products} />
     </div>
