@@ -1,11 +1,11 @@
 import ProductCard from './ProductCard';
 
-const PorductList = () => {
+const PorductList = ({products}) => {
     return (
         <div>
-            <ProductCard></ProductCard>
-            <ProductCard></ProductCard>
-            <ProductCard></ProductCard>
+            {products.map((product, index) => (
+                <ProductCard key={index}  product={product}/>
+            ))}
         </div>
     )
 }
