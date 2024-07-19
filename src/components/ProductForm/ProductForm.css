@@ -8,7 +8,8 @@
     background-color: #FFF;
 }
 
-.product-input, .product-textarea {
+.product-input,
+.product-textarea {
     margin: 0.5rem 0;
     padding: 0.5rem;
     border-radius: 4px;
